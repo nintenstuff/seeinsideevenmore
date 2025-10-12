@@ -4,7 +4,7 @@ import shutil
 import funstuff as f
 from colorama import Fore
 
-inputpath = input("write the path of the .sb3 file you want to convert (dont forget to double the slashes!): ")
+inputpath = input("write the path of the .sb3 file you want to extract (dont forget to double the slashes!): ")
 if not inputpath.endswith(".sb3"):
     print(Fore.RED + "error: not an sb3 file!!")
     f.die()
@@ -36,4 +36,6 @@ print("done!\nrenaming file...")
 os.chdir(output + "/" + title)
 os.rename(filename1, filename2 + ".zip")
 print("done!\nextracting file...")
-# EXTRACT IT
+zipfile.ZipFile(output + "/" + title + "/" + filename2 + ".zip", "r").extractall()
+print("\nALL DONE!!")
+f.die()

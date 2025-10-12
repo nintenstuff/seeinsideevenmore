@@ -2,6 +2,6 @@
 
 This is a tool that unpacks .sb3 (Scratch 3) files into folders.
 
-I might just add some bonus features. Not working yet...
+I might just add some bonus features.
 
 by nin : )
