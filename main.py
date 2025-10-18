@@ -5,14 +5,18 @@ import funstuff as f
 from colorama import Fore
 
 inputpath = input("write the path of the .sb3 file you want to unpack (don't forget to double the slashes!): ")
-if not inputpath.endswith(".sb3"):
+if inputpath.endswith(".sb3") or inputpath.endswith(".sb2"):
+    filename1 = os.path.basename(inputpath)
+    if filename1.endswith(".sb3"):
+        filename2 = filename1.replace(".sb3", "")
+    elif filename1.endswith(".sb2"):
+        filename2 = filename1.replace(".sb3", "")
+    elif not os.path.exists(inputpath):
+        print(Fore.RED + "error: not a valid path or file!!")
+        f.die()
+else:
     print(Fore.RED + "error: not an sb3 file!!")
     f.die()
-elif not os.path.exists(inputpath):
-    print(Fore.RED + "error: not a valid path or file!!")
-    f.die()
-filename1 = os.path.basename(inputpath)
-filename2 = filename1.replace(".sb3", "")
 
 output = input("write the output path: ")
 if not os.path.exists(output):
