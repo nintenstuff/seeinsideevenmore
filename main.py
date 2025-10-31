@@ -4,7 +4,9 @@ import shutil
 import funstuff as f
 from colorama import Fore
 
-inputpath = input("write the path of the .sb3 file you want to unpack (don't forget to double the slashes!): ")
+inputpath = input("write the path of the .sb3 file you want to unpack: ")
+inputpath.replace("/", "//")
+
 if inputpath.endswith(".sb3") or inputpath.endswith(".sb2"):
     filename1 = os.path.basename(inputpath)
     if filename1.endswith(".sb3"):
