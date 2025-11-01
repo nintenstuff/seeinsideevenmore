@@ -4,4 +4,4 @@
     <img src="docs/logo.svg" style="width: 25%"/>
 </p>
 
-A tool that extracts the assets from scratch 3 and 2 files in bulk
+A tool that extracts the assets from scratch 3 and 2 files in bulk.
