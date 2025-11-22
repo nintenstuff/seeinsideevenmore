@@ -45,7 +45,6 @@ def dothething():
     if outputdir != "No file directory":
         if inputlist:
             for i in range(len(inputlist)):
-                print(i)
                 os.chdir(outputdir)
                 if os.path.exists(outputdir + "/" + fn2[i]):
                      messagebox.showwarning(title="Error!", message='Error: cannot add directory "' + fn2[i] + '"!!')
