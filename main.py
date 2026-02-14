@@ -105,23 +105,19 @@ outputbtn = Button(outputframe, text="Add output directory...", command=addoutpu
 outputbtn.pack(side="right")
 
 assetnamez = IntVar()
-assetcheck = Checkbutton(
-    w,
-    text="Name assets according to their name in the project (NOT WORKING)",
-    variable=assetnamez,
-    onvalue=1,
-    offvalue=0
-    )
+assetcheck = Checkbutton(w,
+                         text="Name assets according to their name in the project (NOT WORKING)",
+                         variable=assetnamez,
+                         onvalue=1,
+                         offvalue=0)
 assetcheck.pack()
 
 beautyfier = IntVar()
-beautycheck = Checkbutton(
-    w,
-    text="Beautify JSON (NOT WORKING)",
-    variable=beautyfier,
-    onvalue=1,
-    offvalue=0
-    )
+beautycheck = Checkbutton(w,
+                         text="Beautify JSON (NOT WORKING)",
+                         variable=beautyfier,
+                         onvalue=1,
+                         offvalue=0)
 beautycheck.pack()
 
 starter = Button(w, text="DO IT!!", command=dothething)
