@@ -27,7 +27,7 @@ def addfile():
     if fn1[idx].endswith(".sb3"):
         fn2.append(fn1[idx].replace(".sb3", ""))
     else:
-        fn2.append(fn1[idx].replace("sb2", ""))
+        fn2.append(fn1[idx].replace(".sb2", ""))
 
 def addoutput():
     global outputdir 
