@@ -71,7 +71,7 @@ def dothething():
 
 
 w = Tk()
-w.geometry("385x350")
+w.geometry("480x410")
 w.title("See Inside Even More")
 
 icon = PhotoImage(file="docs/logo.png")
